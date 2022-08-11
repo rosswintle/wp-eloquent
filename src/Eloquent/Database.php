@@ -69,11 +69,13 @@ class Database implements ConnectionInterface
     /**
      * Begin a fluent query against a database table.
      *
-     * @param  string $table
+     * // TODO: Support the $as parameter - this was added to the interface in the update to illuminate v6.0
      *
+     * @param  \Closure|\Illuminate\Database\Query\Builder|string  $table
+     * @param  string|null  $as  *
      * @return \Illuminate\Database\Query\Builder
      */
-    public function table($table)
+    public function table($table, $as=null)
     {
         $processor = $this->getPostProcessor();
 
