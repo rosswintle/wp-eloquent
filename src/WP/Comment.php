@@ -1,9 +1,8 @@
 <?php
 
-namespace WeDevs\ORM\WP;
+namespace RossWintle\ORM\WP;
 
-
-use WeDevs\ORM\Eloquent\Model;
+use RossWintle\ORM\Eloquent\Model;
 
 class Comment extends Model
 {
@@ -16,6 +15,6 @@ class Comment extends Model
      */
     public function post()
     {
-        return $this->hasOne('WeDevs\ORM\WP\Post');
+        return $this->hasOne('RossWintle\ORM\WP\Post');
     }
 }

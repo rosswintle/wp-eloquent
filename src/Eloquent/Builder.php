@@ -1,5 +1,5 @@
 <?php
-namespace WeDevs\ORM\Eloquent;
+namespace RossWintle\ORM\Eloquent;
 
 use Illuminate\Database\Query\Builder as EloquentBuilder;
 
@@ -19,7 +19,7 @@ class Builder extends EloquentBuilder {
      * @return $this
      */
     public function addWhereExistsQuery(EloquentBuilder $query, $boolean = 'and', $not = false) {
-        
+
         $type = $not ? 'NotExists' : 'Exists';
 
         $this->wheres[] = compact('type', 'query', 'boolean');

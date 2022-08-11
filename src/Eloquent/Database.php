@@ -1,5 +1,5 @@
 <?php
-namespace WeDevs\ORM\Eloquent;
+namespace RossWintle\ORM\Eloquent;
 
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Query\Grammars\Grammar;
@@ -30,7 +30,7 @@ class Database implements ConnectionInterface
     /**
      * Initializes the Database class
      *
-     * @return \WeDevs\ORM\Eloquent\Database
+     * @return \RossWintle\ORM\Eloquent\Database
      */
     public static function instance()
     {
@@ -441,7 +441,7 @@ class Database implements ConnectionInterface
     /**
      * Return self as PDO
      *
-     * @return \WeDevs\ORM\Eloquent\Database
+     * @return \RossWintle\ORM\Eloquent\Database
      */
     public function getPdo()
     {

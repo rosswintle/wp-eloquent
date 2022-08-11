@@ -5,7 +5,8 @@
     "homepage": "https://github.com/rosswintle/wp-eloquent",
     "require": {
         "illuminate/database": "^6.0",
-        "illuminate/pagination": "^6.0"
+        "illuminate/pagination": "^6.0",
+        "illuminate/support": "^6.0"
     },
     "license": "GPL-2.0-or-later",
     "authors": [

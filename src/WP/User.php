@@ -1,9 +1,8 @@
 <?php
 
-namespace WeDevs\ORM\WP;
+namespace RossWintle\ORM\WP;
 
-
-use WeDevs\ORM\Eloquent\Model;
+use RossWintle\ORM\Eloquent\Model;
 
 class User extends Model
 {
@@ -12,6 +11,6 @@ class User extends Model
 
     public function meta()
     {
-        return $this->hasMany('WeDevs\ORM\WP\UserMeta', 'user_id');
+        return $this->hasMany('RossWintle\ORM\WP\UserMeta', 'user_id');
     }
 }

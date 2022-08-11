@@ -1,14 +1,13 @@
 <?php
 
-namespace WeDevs\ORM\WP;
+namespace RossWintle\ORM\WP;
 
-
-use WeDevs\ORM\Eloquent\Model;
+use RossWintle\ORM\Eloquent\Model;
 
 /**
  * Class Post
  *
- * @package WeDevs\ORM\WP
+ * @package RossWintle\ORM\WP
  */
 class Post extends Model
 {
@@ -67,7 +66,7 @@ class Post extends Model
      */
     public function comments()
     {
-        return $this->hasMany('WeDevs\ORM\WP\Comment', 'comment_post_ID');
+        return $this->hasMany('RossWintle\ORM\WP\Comment', 'comment_post_ID');
     }
 
     /**
@@ -77,6 +76,6 @@ class Post extends Model
      */
     public function meta()
     {
-        return $this->hasMany('WeDevs\ORM\WP\PostMeta', 'post_id');
+        return $this->hasMany('RossWintle\ORM\WP\PostMeta', 'post_id');
     }
 }
